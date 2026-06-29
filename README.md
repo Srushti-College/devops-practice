@@ -10,7 +10,9 @@
 
 **Date: 28/06/2026**
 
-#                                                             Architecture
+
+
+ #                                                             Architecture
 
                                                             
 <img width="940" height="624" alt="image" src="https://github.com/user-attachments/assets/674306af-48cc-49bd-9479-7340c62ef068" />
@@ -20,22 +22,31 @@
 ## EC2 instance:-
 <img width="940" height="331" alt="image" src="https://github.com/user-attachments/assets/ba0171d6-5477-4fe3-b5d9-80e767056c67" />
 
+
 ## Security Group:-
 <img width="940" height="425" alt="image" src="https://github.com/user-attachments/assets/4acbfd90-83bd-4d41-a066-be9e2a82b4cb" />
 
 ## Dockerfile :-
 
 <img width="940" height="261" alt="image" src="https://github.com/user-attachments/assets/471f101f-3d0b-4a91-b7d7-73e2a05426c5" />
+
 ## Docker Images:-
 <img width="940" height="177" alt="image" src="https://github.com/user-attachments/assets/d51c02c5-0be3-4503-ac39-e903f2ba5f36" />
-# Docker Container :-
+
+## Docker Container :-
 <img width="940" height="100" alt="image" src="https://github.com/user-attachments/assets/0569c9bd-69a3-4ddf-a828-d85cd1502b2c" />
-# On Browser:-
+
+## On Browser:-
 <img width="890" height="246" alt="image" src="https://github.com/user-attachments/assets/4402aae7-dab1-4371-ac5a-7c932dc66051" />
+
 ## Docker Container:-
 <img width="940" height="94" alt="image" src="https://github.com/user-attachments/assets/b3ab094d-1589-4633-b88f-8675a685e3a9" />
+
+
 ## Dockerhub:-
 <img width="940" height="218" alt="image" src="https://github.com/user-attachments/assets/d67fc592-764d-471c-a1ef-46bc146194c9" />
+
+
 ## Pod:-
 <img width="940" height="187" alt="image" src="https://github.com/user-attachments/assets/32d25fc7-3b14-4ced-b889-c99216997d85" />
 
@@ -44,8 +55,11 @@
 <img width="940" height="206" alt="image" src="https://github.com/user-attachments/assets/23a93057-fadb-4ff5-9af9-0d78b847c998" />
 <img width="940" height="318" alt="image" src="https://github.com/user-attachments/assets/5597bebc-6e9a-43e0-a024-1948810102b8" />
 
+
 ## Deployment:-
 <img width="940" height="133" alt="image" src="https://github.com/user-attachments/assets/14ec2d86-c8ef-4ad4-b447-f6a4f1fdc1f3" />
+
+
 ## Service:-
 <img width="940" height="125" alt="image" src="https://github.com/user-attachments/assets/81d7c97b-407a-462b-8784-ef0c6a3e9432" />
 
