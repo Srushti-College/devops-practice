@@ -152,13 +152,13 @@ Read-only
 Does not run	                                               
 Created using Dockerfile	                                   
 Stored in registry	                                          
- 
+---------- 
 **Container**
 Running instance
 Writable layer
 Runs application
 Created from Image 
- Runs on Docker Engine
+Runs on Docker Engine
 
  
 ## 7)Difference between docker stop and docker rm?
