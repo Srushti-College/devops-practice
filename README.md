@@ -117,16 +117,17 @@ Uses more CPU and RAM
  Uses hypervisor	                                            
  Large size (GBs)	                                           
  Hardware virtualization	                                    
-Example: VMware, VirtualBox	                                 
+Example: VMware, VirtualBox	  
+
 
 **Container**
-Shares host OS kernel
-Lightweight
-Starts in seconds
-Uses Docker Engine
-Small size (MBs)
-OS-level virtualization
-Example: Docker
+Shares host OS kernel,
+Lightweight,
+Starts in seconds,
+Uses Docker Engine,
+Small size (MBs),
+OS-level virtualization,
+Example: Docker,
 
 
 ## 3.	What is an Image?
@@ -152,7 +153,7 @@ Read-only
 Does not run	                                               
 Created using Dockerfile	                                   
 Stored in registry	                                          
----------- 
+
 **Container**
 Running instance
 Writable layer
