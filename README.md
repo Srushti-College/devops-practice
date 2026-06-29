@@ -118,6 +118,7 @@ Uses more CPU and RAM
  Large size (GBs)	                                           
  Hardware virtualization	                                    
 Example: VMware, VirtualBox	  
+...
 
 
 **Container**
@@ -128,6 +129,7 @@ Uses Docker Engine,
 Small size (MBs),
 OS-level virtualization,
 Example: Docker,
+...
 
 
 ## 3.	What is an Image?
