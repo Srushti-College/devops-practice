@@ -110,26 +110,15 @@ Benefits:
 
 
 ## 2.	Difference between VM and Container?
-**Virtual Machine**	                                                
-Runs complete operating system	                             
-Uses more CPU and RAM	                                       
- Takes minutes to start	                                    
- Uses hypervisor	                                            
- Large size (GBs)	                                           
- Hardware virtualization	                                    
-Example: VMware, VirtualBox	  
-...
-
-
-**Container**
-Shares host OS kernel,
-Lightweight,
-Starts in seconds,
-Uses Docker Engine,
-Small size (MBs),
-OS-level virtualization,
-Example: Docker,
-...
+| Virtual Machine | Container |
+|---|---|
+| Runs complete operating system | Shares host OS kernel |
+| Uses more CPU and RAM | Lightweight |
+| Takes minutes to start | Starts in seconds |
+| Uses hypervisor | Uses Docker Engine |
+| Large size (GBs) | Small size (MBs) |
+| Hardware virtualization | OS-level virtualization |
+| Example: VMware, VirtualBox | Example: Docker |
 
 
 ## 3.	What is an Image?
