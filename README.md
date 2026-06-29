@@ -110,14 +110,23 @@ Benefits:
 
 
 ## 2.	Difference between VM and Container?
-**Virtual Machine	                                                Container**
-Runs complete operating system	                             Shares host OS kernel
-Uses more CPU and RAM	                                       Lightweight
-Takes minutes to start	                                     Starts in seconds
-Uses hypervisor	                                             Uses Docker Engine
-Large size (GBs)	                                           Small size (MBs)
-Hardware virtualization	                                     OS-level virtualization
-Example: VMware, VirtualBox	                                 Example: Docker
+**Virtual Machine**	                                                
+Runs complete operating system	                             
+Uses more CPU and RAM	                                       
+ Takes minutes to start	                                    
+ Uses hypervisor	                                            
+ Large size (GBs)	                                           
+ Hardware virtualization	                                    
+Example: VMware, VirtualBox	                                 
+
+**Container**
+Shares host OS kernel
+Lightweight
+Starts in seconds
+Uses Docker Engine
+Small size (MBs)
+OS-level virtualization
+Example: Docker
 
 
 ## 3.	What is an Image?
@@ -135,27 +144,41 @@ A Container is a running instance of a Docker Image.
 ## 5.	What happens if a container is deleted?
 If a container is deleted, the container data is removed but the image and external volumes remain.
 
+
 ## 6)Difference between Image and Container?
-**Image	                                                       Container**
-Blueprint/template	                                            Running instance
-Read-only	                                                    Writable layer
-Does not run	                                                Runs application
-Created using Dockerfile	                                    Created from Image
-Stored in registry	                                            Runs on Docker Engine
+**Image**                                                      
+Blueprint/template	                                            
+Read-only	                                                   
+Does not run	                                               
+Created using Dockerfile	                                   
+Stored in registry	                                          
+ 
+**Container**
+Running instance
+Writable layer
+Runs application
+Created from Image 
+ Runs on Docker Engine
 
-
+ 
 ## 7)Difference between docker stop and docker rm?
-**docker stop	                                                                   docker rm**
-Stops container	                                                          Deletes container
-Container remains	                                                      Container removed
-Data inside container remains temporarily	                              Container metadata removed
-Can restart	                                                              Cannot restart
-Used for maintenance	                                                  Used for cleanup
-
+**docker stop**	                                                                  
+Stops container	                                                        
+Container remains	                                                      
+Data inside container remains temporarily	                              
+Can restart	                                                             
+Used for maintenance	                                                  
+ **docker rm**
+Deletes container
+Container removed
+Container metadata removed
+Cannot restart
+Used for cleanup
 
 
 ## 8)Where are container logs stored?
 Docker stores container logs by default under /var/lib/docker/containers, and logs can be viewed using docker logs.
+
 ## 9)Why are volumes needed?
 Docker volumes are used for persistent data storage.
 By default, data created inside a container exists only inside the container filesystem. If the container is deleted, that data is lost.
@@ -170,13 +193,20 @@ Without volumes:
 •	Database data can be lost. 
 
 ## 11)Difference between Volume and Bind Mount?
-**Docker Volume	                                                        Bind Mount**
-Managed by Docker	                                               Managed by user
-Stored in Docker storage area	                                   Stored anywhere on host
-More secure	                                                       Less isolated
-Recommended for production	                                       Mostly development use
-Docker manages lifecycle	                                       User manages files
+**Docker Volume**	                                                        
+Managed by Docker	                                             
+Stored in Docker storage area	                                 
+More secure	                                                      
+Recommended for production	                                      
+Docker manages lifecycle	                                       
+**Bind Mount**
+  Managed by user
+ Stored anywhere on host
+ Less isolated
+ Mostly development use
+ User manages files
 
+ 
 ## 12)Why use custom networks?
 Custom Docker networks are used to allow containers to communicate with each other securely and easily using container names.
 By default, Docker creates a default bridge network, but custom networks provide better isolation and service communication.
@@ -186,24 +216,37 @@ By default, Docker creates a default bridge network, but custom networks provide
 
 
 ## 13)Difference between bridge and host network?
-**Bridge Network	                                                                      Host Network**
-Default mode        	                                                               Uses host network
-Container has own IP	                                                               Container shares host IP
-More isolation	                                                                       Less isolation
-Requires port mapping	                                                               No port mapping
-More secure	                                                                          Less secure
-Good for most applications	                                                          Used for high-performance workloads
+**Bridge Network**	                                                                     
+Default mode        	                                                               
+Container has own IP	                                                              
+More isolation	                                                                      
+Requires port mapping	                                                             
+More secure	                                                                         
+Good for most applications	   
 
+ **Host Network**
+ Uses host network
+ Container shares host IP
+ Less isolation
+ No port mapping
+  Less secure
+  Used for high-performance workloads
+
+   
 ## 14)How do containers communicate?
 Containers communicate using:
 1.	Docker Networks 
 2.	Container IP addresses 
 3.	Container DNS names
+
+   
 ## 15)What is Jenkins?
 Jenkins is an open-source automation server used to automate the software development lifecycle, especially Continuous Integration (CI) and Continuous Delivery/Deployment (CD).
 
 ## 16)What problem does Jenkins solve?
 Jenkins solves the problem of manual, slow, and error-prone software delivery processes by automating build, testing, and deployment.
+
+
 ## 17)Difference between CI and CD?
 CI :- focuses on automatically building and testing code changes.
 CD:- focuses on automatically delivering or deploying the tested application to environments like staging or production.
@@ -229,28 +272,42 @@ Pipelines are used because manual deployments are:
 •	Hard to track
 
 ## 20)Difference between Freestyle and Pipeline jobs?
-**Freestyle Job                                           	Pipeline Job**
-Configured using Jenkins UI	                              Written as code
-Hard to maintain for large projects	                      Easy to maintain
-Limited version control	                                  Jenkinsfile stored in Git
-Manual configuration	                                  Automated workflow
-Less suitable for DevOps	                              Recommended for CI/CD
-Difficult to replicate	                                  Easily reusable
+**Freestyle Job**                                           	
+Configured using Jenkins UI	                              
+Hard to maintain for large projects	                      
+Limited version control	                                  
+Manual configuration	                                
+Less suitable for DevOps	                             
+Difficult to replicate	                                  
+
+**Pipeline Job**
+Written as code
+Easy to maintain	
+Jenkinsfile stored in Git
+Automated workflow
+Recommended for CI/CD
+Easily reusable
 
 
-
-	
+  
 ## 21)Why use a registry?
 A Docker Registry is used to store, manage, and distribute Docker images.
 
 ## 22)Difference between local image and registry image?
-**Local Image                                                 	Registry Image**
-Stored on one machine	                                Stored in central repository
-Not shared	                                            Shared
-Built locally	                                        Pulled by servers
-Limited availability	                                Available anywhere
-Used for development/testing	                        Used for deployment
+**Local Image**                                                
+Stored on one machine	                                
+Not shared	                                          
+Built locally	                                        
+Limited availability	                                
+Used for development/testing	                       
+**Registry Image**
+Stored in central repository
+Shared
+Pulled by servers
+Available anywhere
+ Used for deployment
 
+ 
 ## 23)Why not build images directly on production servers?
 Building images directly on production servers is not recommended because it creates security, stability, and deployment problems.
 
@@ -288,17 +345,22 @@ Kubernetes continuously monitors the actual state of the application and compare
 
 
 ## 31)Difference between Pod and Deployment?
- **Pod	                                                  Deployment**
-Smallest Kubernetes unit	                       Kubernetes controller
-Runs containers	                                   Manages Pods
-Cannot self-heal alone	                           Provides self-healing
-No replica management	                           Maintains replicas
-No rolling updates	                               Supports rolling updates
-Temporary object	                               Long-term management
+ **Pod**                                                  
+Smallest Kubernetes unit	                       
+Runs containers	                                  
+Cannot self-heal alone	                          
+No replica management	                           
+No rolling updates	                              
+Temporary object	                              
 
-
-
-
+**Deployment**
+Kubernetes controller
+ Manages Pods
+ Provides self-healing
+ Maintains replicas
+ Supports rolling updates
+ Long-term management
+ 
 ## 32)What is desired state?
 Desired state is the configuration we define, such as the number of replicas, that Kubernetes continuously maintains automatically.
 
@@ -311,14 +373,20 @@ A Kubernetes Service provides:
 •	Communication between applications
 
 ## 33)Difference between ClusterIP and NodePort?
-**ClusterIP	                                     NodePort**
-Default service type	                       External access service
-Internal communication only	                   Accessible outside cluster
-No external IP	                               Uses node IP + port
-More secure	                                   Less secure
-Used in production internally	               Used for testing/demo
+**ClusterIP**                                    
+Default service type	                      
+Internal communication only	                  
+No external IP	                              
+More secure	                                   
+Used in production internally	              
+**NodePort**
+ External access service
+ Accessible outside cluster
+ Uses node IP + port
+ Less secure
+ Used for testing/demo
 
-
+ 
 ## 34)What happens when Pod IP changes?
 When a Pod IP changes, Kubernetes automatically updates the Service endpoints and redirects traffic to the new Pod.
 
