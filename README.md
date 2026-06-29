@@ -1,6 +1,6 @@
 # DevOps Project Assignment - Docker + Jenkins + Kubernetes
 
-**Project :-  End-to-End CI/CD Pipeline Automation Using Docker, Jenkins and Kubernetes**
+## Project :-  End-to-End CI/CD Pipeline Automation Using Docker, Jenkins and Kubernetes**
 
 **Prepared By:**
 **Srushti Tembhurne**
@@ -12,6 +12,11 @@
 
 
 
+ 
+ 
+ 
+ 
+ 
  #                                                             Architecture
 
                                                             
@@ -19,25 +24,32 @@
 
 
 
+
 ## EC2 instance:-
 <img width="940" height="331" alt="image" src="https://github.com/user-attachments/assets/ba0171d6-5477-4fe3-b5d9-80e767056c67" />
+
 
 
 ## Security Group:-
 <img width="940" height="425" alt="image" src="https://github.com/user-attachments/assets/4acbfd90-83bd-4d41-a066-be9e2a82b4cb" />
 
+
 ## Dockerfile :-
 
 <img width="940" height="261" alt="image" src="https://github.com/user-attachments/assets/471f101f-3d0b-4a91-b7d7-73e2a05426c5" />
 
+
 ## Docker Images:-
 <img width="940" height="177" alt="image" src="https://github.com/user-attachments/assets/d51c02c5-0be3-4503-ac39-e903f2ba5f36" />
+
 
 ## Docker Container :-
 <img width="940" height="100" alt="image" src="https://github.com/user-attachments/assets/0569c9bd-69a3-4ddf-a828-d85cd1502b2c" />
 
+
 ## On Browser:-
 <img width="890" height="246" alt="image" src="https://github.com/user-attachments/assets/4402aae7-dab1-4371-ac5a-7c932dc66051" />
+
 
 ## Docker Container:-
 <img width="940" height="94" alt="image" src="https://github.com/user-attachments/assets/b3ab094d-1589-4633-b88f-8675a685e3a9" />
@@ -51,29 +63,37 @@
 <img width="940" height="187" alt="image" src="https://github.com/user-attachments/assets/32d25fc7-3b14-4ced-b889-c99216997d85" />
 
 
+
 ## Jenkins pipeline:-
 <img width="940" height="206" alt="image" src="https://github.com/user-attachments/assets/23a93057-fadb-4ff5-9af9-0d78b847c998" />
 <img width="940" height="318" alt="image" src="https://github.com/user-attachments/assets/5597bebc-6e9a-43e0-a024-1948810102b8" />
+
 
 
 ## Deployment:-
 <img width="940" height="133" alt="image" src="https://github.com/user-attachments/assets/14ec2d86-c8ef-4ad4-b447-f6a4f1fdc1f3" />
 
 
+
 ## Service:-
 <img width="940" height="125" alt="image" src="https://github.com/user-attachments/assets/81d7c97b-407a-462b-8784-ef0c6a3e9432" />
+
 
 ## deployment.yml file :-
 <img width="940" height="832" alt="image" src="https://github.com/user-attachments/assets/da27af01-9f85-4dc9-b1fd-6e613d870eb9" />
 <img width="759" height="171" alt="image" src="https://github.com/user-attachments/assets/ca348921-ffb9-431f-acf6-5c9e20736214" />
 
+
+
 ## Service.yml file :-
 <img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/4cc8e54b-65a5-4687-b495-d88db71a3f9d" />
+
 
 ## Jenkisnfile:-  
 <img width="940" height="528" alt="image" src="https://github.com/user-attachments/assets/5a63a56c-fd45-48bc-8aaf-5f7205f7d4c8" />
 <img width="940" height="755" alt="image" src="https://github.com/user-attachments/assets/0497dce8-f7eb-4f3b-9e8c-48605ffd2e77" />
 <img width="801" height="615" alt="image" src="https://github.com/user-attachments/assets/e6a07296-273c-4667-a4cc-1105f79dccf3" />
+
 
 
 #                                                     Answer of all Question
@@ -118,19 +138,19 @@ If a container is deleted, the container data is removed but the image and exter
 ## 6)Difference between Image and Container?
 **Image	                                                       Container**
 Blueprint/template	                                            Running instance
-Read-only	                                                     Writable layer
-Does not run	                                                  Runs application
-Created using Dockerfile	                                      Created from Image
+Read-only	                                                    Writable layer
+Does not run	                                                Runs application
+Created using Dockerfile	                                    Created from Image
 Stored in registry	                                            Runs on Docker Engine
 
 
 ## 7)Difference between docker stop and docker rm?
 **docker stop	                                                                   docker rm**
 Stops container	                                                          Deletes container
-Container remains	                                                       Container removed
-Data inside container remains temporarily	                               Container metadata removed
-Can restart	                                                             Cannot restart
-Used for maintenance	                                                   Used for cleanup
+Container remains	                                                      Container removed
+Data inside container remains temporarily	                              Container metadata removed
+Can restart	                                                              Cannot restart
+Used for maintenance	                                                  Used for cleanup
 
 
 
@@ -153,9 +173,9 @@ Without volumes:
 **Docker Volume	                                                        Bind Mount**
 Managed by Docker	                                               Managed by user
 Stored in Docker storage area	                                   Stored anywhere on host
-More secure	                                                      Less isolated
-Recommended for production	                                      Mostly development use
-Docker manages lifecycle	                                        User manages files
+More secure	                                                       Less isolated
+Recommended for production	                                       Mostly development use
+Docker manages lifecycle	                                       User manages files
 
 ## 12)Why use custom networks?
 Custom Docker networks are used to allow containers to communicate with each other securely and easily using container names.
@@ -169,9 +189,9 @@ By default, Docker creates a default bridge network, but custom networks provide
 **Bridge Network	                                                                      Host Network**
 Default mode        	                                                               Uses host network
 Container has own IP	                                                               Container shares host IP
-More isolation	                                                                     Less isolation
+More isolation	                                                                       Less isolation
 Requires port mapping	                                                               No port mapping
-More secure	                                                                         Less secure
+More secure	                                                                          Less secure
 Good for most applications	                                                          Used for high-performance workloads
 
 ## 14)How do containers communicate?
@@ -213,8 +233,8 @@ Pipelines are used because manual deployments are:
 Configured using Jenkins UI	                              Written as code
 Hard to maintain for large projects	                      Easy to maintain
 Limited version control	                                  Jenkinsfile stored in Git
-Manual configuration	                                    Automated workflow
-Less suitable for DevOps	                                Recommended for CI/CD
+Manual configuration	                                  Automated workflow
+Less suitable for DevOps	                              Recommended for CI/CD
 Difficult to replicate	                                  Easily reusable
 
 
@@ -226,7 +246,7 @@ A Docker Registry is used to store, manage, and distribute Docker images.
 ## 22)Difference between local image and registry image?
 **Local Image                                                 	Registry Image**
 Stored on one machine	                                Stored in central repository
-Not shared	                                          Shared
+Not shared	                                            Shared
 Built locally	                                        Pulled by servers
 Limited availability	                                Available anywhere
 Used for development/testing	                        Used for deployment
@@ -270,10 +290,10 @@ Kubernetes continuously monitors the actual state of the application and compare
 ## 31)Difference between Pod and Deployment?
  **Pod	                                                  Deployment**
 Smallest Kubernetes unit	                       Kubernetes controller
-Runs containers	                                 Manages Pods
-Cannot self-heal alone	                         Provides self-healing
+Runs containers	                                   Manages Pods
+Cannot self-heal alone	                           Provides self-healing
 No replica management	                           Maintains replicas
-No rolling updates	                             Supports rolling updates
+No rolling updates	                               Supports rolling updates
 Temporary object	                               Long-term management
 
 
@@ -293,10 +313,10 @@ A Kubernetes Service provides:
 ## 33)Difference between ClusterIP and NodePort?
 **ClusterIP	                                     NodePort**
 Default service type	                       External access service
-Internal communication only	                Accessible outside cluster
-No external IP	                            Uses node IP + port
-More secure	                                Less secure
-Used in production internally	              Used for testing/demo
+Internal communication only	                   Accessible outside cluster
+No external IP	                               Uses node IP + port
+More secure	                                   Less secure
+Used in production internally	               Used for testing/demo
 
 
 ## 34)What happens when Pod IP changes?
